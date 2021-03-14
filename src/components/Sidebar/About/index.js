@@ -14,7 +14,7 @@ class About extends Component {
         </h5>
           Data Scientist & Computer Engineer.
           <br/> <br/>
-          Researching and analyizing data in various projects on my spare time. 
+          Researching and analyzing data in various projects on my spare time. 
           <br/> <br/>
           Music lover, travelling fanatic and also<a href='https://photos.alexingberg.com/' className="link"> an amateur photographer. </a>
           <br/> <br/>
