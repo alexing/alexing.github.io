@@ -21,8 +21,8 @@ class ExperienceSection extends React.Component {
             title='Outbrain'
             link='https://www.outbrain.com'
             timeperiod='2019 - present'
-            position='NLP Engineer'
-            subtitle="Natural Language Processing algorithms and collaborative filtering processes. Outbrain's Recommendations Group."
+            position='Machine Learning Engineer'
+            subtitle="AutoML team, Recommendations group. Owner of various internal products that help data scientists automate their work, allowing them to deploy models at a large scale. End to end responsibilities: backend and frontend development, machine learning research, MLops & product management."
           />
           <ExperienceUnit
             logo={namogooLogo}
