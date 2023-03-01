@@ -74,7 +74,7 @@ class ProjectsSection extends React.Component {
             colour="#DAD9D6"
             title="Music Magal"
             link="https://hackernoon.com/musicmagal-c93e9dabd01a?gi=651af09b85f4"
-            subtitle="MusicMagal is a group recommendation system that recommends n music tracks to a group of m users taking all of the m users preferences into account. Used last.fm data, an alternating least squares model and item2vec embeddings. After computing and when the resulting playlist is output, we create a real playlist using Spotify Web."
+            subtitle="MusicMagal is a group recommendation system that recommends n music tracks to a group of m users taking all of the m users preferences into account. Used last.fm data, an alternating least squares model and item2vec embeddings. After computing and when the resulting playlist is output, we create a real playlist using Spotify Web API."
             github="https://github.com/alexing/musicmagal"
             medium="https://hackernoon.com/musicmagal-c93e9dabd01a"
             timeperiod="2018"

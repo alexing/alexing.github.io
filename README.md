@@ -8,7 +8,11 @@ See it in action [here](http://www.alexingberg.com/).
 ```
 gatsby new gatsby-site https://github.com/alexing/alexing.github.io
 ```
-After running
+To test in localhost:
+```
+gatsby develop
+```
+To deploy:
 ```
 npm run deploy
 ```
