@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{101:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Alex Ingberg",description:"Data Scientist",url:"https://www.alexingberg.com",keywords:"data science, machine learning, portfolio, personal website"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----d84148816c0a299a2f8d.js.map

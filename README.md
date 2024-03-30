@@ -1,19 +1,9 @@
 # alexing.github.io
-My portfolio developed in  [Gatsby](https://www.gatsbyjs.org/).
+My portfolio developed on plain **HTML5**/**CSS3** deployed using **GitHub Pages**.  
+The project was developed with some free time and a lot of ChatGPTing :)
 
 ## Demo
 See it in action [here](http://www.alexingberg.com/).
 
-## Installation
-```
-gatsby new gatsby-site https://github.com/alexing/alexing.github.io
-```
-After running
-```
-npm run deploy
-```
-you should see your website at http://<user_name>.github.io
-
 ## Based on 
-https://github.com/praagyajoshi/gatsby-starter-2column-portfolio
-
+https://themewagon.com/themes/best-quality-free-portfolio-resume-bootstrap-template-download/
