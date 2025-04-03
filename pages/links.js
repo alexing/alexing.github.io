@@ -38,7 +38,7 @@ export default function Links() {
                         rel="noopener noreferrer"
                         className="bg-accent/40 hover:bg-accent/70 text-foreground font-medium py-3 rounded-lg transition-colors"
                     >
-                        ai projects, resume, and work-ish stuff 🧑🏻‍💻📊💪🏼
+                        ai projects, resume and work-ish stuff 🧑🏻‍💻📊💪🏼
                     </a>
                     <a
                         href="mailto:hi@alexingberg.com"
