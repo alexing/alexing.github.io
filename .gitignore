@@ -1,2 +1,56 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Vercel deployment
+.vercel/
+
+# Production
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# OS/system files
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE settings
+.vscode/
 .idea/
+*.code-workspace
+
+# Mac system files
+*.DS_Store
+
+# Misc
+*.tgz
+.cache/
+coverage/
+*.local
+*.zip
+*.bak
+
+# SASS / CSS cache
+.sass-cache/
+
+# Optional: ignore public/assets uploads (remove if needed)
+# /public/assets/uploads/
+
+# Optional: Ignore static exports
+/static/
