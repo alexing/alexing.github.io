@@ -146,7 +146,7 @@ export default function GarageSale() {
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                {[...items]
+                {[...filteredItems]
                     .sort((a, b) => Number(a.sold) - Number(b.sold))
                     .map((item, idx) => (
                         <div
