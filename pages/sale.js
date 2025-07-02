@@ -146,43 +146,45 @@ export default function GarageSale() {
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                {filteredItems.map((item, idx) => (
-                    <div
-                        key={item.title}
-                        className="relative group rounded-lg shadow-md overflow-hidden bg-[#1a1a1a] hover:shadow-lg transition-shadow duration-200"
-                    >
-                        <div className="aspect-square overflow-hidden relative">
-                            <div
-                                className="aspect-square overflow-hidden relative cursor-pointer"
-                                onClick={() => setSelectedItem(item)}
-                            >
-                                <img
-                                    src={item.img}
-                                    alt={item.title}
-                                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-200"
-                                />
-                                {item.sold && (
+                {[...items]
+                    .sort((a, b) => Number(a.sold) - Number(b.sold))
+                    .map((item, idx) => (
+                        <div
+                            key={item.title}
+                            className="relative group rounded-lg shadow-md overflow-hidden bg-[#1a1a1a] hover:shadow-lg transition-shadow duration-200"
+                        >
+                            <div className="aspect-square overflow-hidden relative">
+                                <div
+                                    className="aspect-square overflow-hidden relative cursor-pointer"
+                                    onClick={() => setSelectedItem(item)}
+                                >
                                     <img
-                                        src="/images/sold.png"
-                                        alt="Sold"
-                                        className="absolute top-0 left-0 w-full h-full object-contain opacity-80 pointer-events-none"
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-200"
                                     />
-                                )}
+                                    {item.sold && (
+                                        <img
+                                            src="/images/sold.png"
+                                            alt="Sold"
+                                            className="absolute top-0 left-0 w-full h-full object-contain opacity-80 pointer-events-none"
+                                        />
+                                    )}
+                                </div>
+                            </div>
+                            <div className="p-4">
+                                <h2 className="text-xl font-semibold">{item.title}</h2>
+                                <p className="text-sm whitespace-pre-line text-gray-300 mt-1">
+                                    {item.description}
+                                </p>
+                                <div
+                                    className="mt-2 text-right text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit ml-auto rounded">
+                                    {item.price}
+                                </div>
                             </div>
                         </div>
-                        <div className="p-4">
-                            <h2 className="text-xl font-semibold">{item.title}</h2>
-                            <p className="text-sm whitespace-pre-line text-gray-300 mt-1">
-                                {item.description}
-                            </p>
-                            <div
-                                className="mt-2 text-right text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit ml-auto rounded">
-                                {item.price}
-                            </div>
-                        </div>
-                    </div>
 
-                ))}
+                    ))}
             </div>
 
             {selectedItem && (
