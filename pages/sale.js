@@ -59,6 +59,14 @@ const items = [
         category: 'Furniture'
     },
     {
+        title: 'Red Wall Shelves',
+        price: '₪200',
+        description: 'Excellent condition.\n20x17x201cm.',
+        img: '/images/red_shelves.jpeg',
+        sold: false,
+        category: 'Furniture'
+    },
+    {
         title: 'Oil-Filled Radiator Heater',
         price: '₪150',
         description: '2500W.\nHeats any home space – big or small – with ease.',
@@ -97,7 +105,81 @@ const items = [
         img: '/images/sillon_negro.jpeg',
         sold: false,
         category: 'Furniture'
+    },
+    {
+        title: 'Ti Plant',
+        price: '₪250',
+        description: 'Tropical look with pink-red leaves.\nLow maintenance and bold.\nGreat for bright indoor spots.',
+        img: '/images/ti_plant.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Cactus (Columnar Type)',
+        price: '₪80',
+        description: 'Tall and architectural cactus.\nMinimal water needed.\nLoves sunlight.',
+        img: '/images/cactus.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Croton',
+        price: '₪200',
+        description: 'Colorful and bold leaves.\nLoves bright, indirect light.\nAdds energy to any corner.',
+        img: '/images/croton.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Rubber Plant',
+        price: '₪200',
+        description: 'Sculptural, glossy leaves.\nGreat light absorber.\nStatement indoor plant.',
+        img: '/images/rubber_1.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Cylindrical Snake Plant',
+        price: '₪150',
+        description: 'Minimalist, modern look.\nVery low maintenance.\nThrives on neglect.',
+        img: '/images/snake_cylinder.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Philodendron Selloum',
+        price: '₪300',
+        description: 'Big, dramatic leaves.\nGreat for filling space.\nTropical jungle vibes.',
+        img: '/images/philodendron.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Plant',
+        price: '₪100',
+        description: 'Beautiful plant.',
+        img: '/images/stevia.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Rubber Plant',
+        price: '₪400',
+        description: 'Tall, glossy and elegant and 2m+ tall.\nGreat light companion.\nIndoor classic.',
+        img: '/images/rubber_2.jpeg',
+        sold: false,
+        category: 'Plants'
+    },
+    {
+        title: 'Pineapple Plant',
+        price: '₪150',
+        description: 'Grown from a pineapple top.\nSculptural and tropical.\nOne day it may fruit.',
+        img: '/images/pineapple.jpeg',
+        sold: false,
+        category: 'Plants'
     }
+
+
 ];
 
 
@@ -129,7 +211,7 @@ export default function GarageSale() {
             </div>
 
             <div className="flex justify-center space-x-4 mb-8">
-                {['All', 'Tech & Gadgets', 'Appliances', 'Furniture'].map(cat => (
+                {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants'].map(cat => (
                     <button
                         key={cat}
                         onClick={() => setSelectedCategory(cat)}
