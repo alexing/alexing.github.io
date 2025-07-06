@@ -45,7 +45,7 @@ const items = [
     {
         title: 'Chair',
         price: '₪80',
-        description: '“Stam” chair.\nExcellent condition.',
+        description: '"Stam" chair.\nExcellent condition.',
         img: '/images/chair.jpeg',
         sold: false,
         category: 'Furniture'
@@ -131,7 +131,7 @@ const items = [
         category: 'Plants'
     },
     {
-        title: 'Rubber Plant',
+        title: 'Rubber Plant 1',
         price: '₪200',
         description: 'Sculptural, glossy leaves.\nGreat light absorber.\nStatement indoor plant.',
         img: '/images/rubber_1.jpeg',
@@ -163,7 +163,7 @@ const items = [
         category: 'Plants'
     },
     {
-        title: 'Rubber Plant',
+        title: 'Rubber Plant 2',
         price: '₪400',
         description: 'Tall, glossy and elegant and 2m+ tall.\nGreat light companion.\nIndoor classic.',
         img: '/images/rubber_2.jpeg',
@@ -192,9 +192,9 @@ export default function GarageSale() {
         : items.filter(item => item.category === selectedCategory);
 
     return (
-        <div className="min-h-screen bg-brand text-foreground px-4 py-12">
+        <div className="min-h-screen bg-brand text-foreground px-4 py-12 w-full overflow-x-hidden">
             <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold mb-2">WE’RE MOVING!</h1>
+                <h1 className="text-4xl font-bold mb-2">WE'RE MOVING!</h1>
                 <h2 className="text-2xl mb-1">SELLING EVERYTHING :)</h2>
                 <p className="text-md text-subtle mb-4">Pick up from Yaffo – Yehuda Hayamit st.</p>
                 <a
@@ -210,12 +210,15 @@ export default function GarageSale() {
                 </p>
             </div>
 
-            <div className="flex justify-center space-x-4 mb-8">
+            <div className="
+                flex flex-nowrap space-x-4 mb-8 overflow-x-auto no-scrollbar -mx-4 px-4 w-full
+                md:justify-center md:flex-wrap md:overflow-x-visible md:no-scrollbar-none md:mx-0 md:px-0
+            ">
                 {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants'].map(cat => (
                     <button
                         key={cat}
                         onClick={() => setSelectedCategory(cat)}
-                        className={`px-4 py-2 rounded-full border ${
+                        className={`px-4 py-2 rounded-full border min-w-max ${
                             selectedCategory === cat
                                 ? 'bg-accent text-black font-semibold'
                                 : 'text-subtle border-subtle hover:bg-neutral-800'
