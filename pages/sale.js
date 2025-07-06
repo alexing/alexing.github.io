@@ -36,7 +36,8 @@ const items = [
         img: '/images/turntable.png',
         sold: true,
         category: 'Tech & Gadgets',
-        lastWeekOnly: false,    },
+        lastWeekOnly: false,
+    },
     {
         title: 'INGCO 850W Power Drill',
         price: '₪200',
@@ -207,8 +208,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'IKEA Kullen Nightstand',
         price: '₪100',
         description: 'Two big drawers\nExcellent condition\n35x30x49cm',
@@ -216,8 +217,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true,
-      },
-      {
+    },
+    {
         title: 'Vintage Velvet Ottoman Stool',
         price: '₪200',
         description: 'Mustard Gold\nExcellent condition, perfect as a footrest or accent seat.',
@@ -225,8 +226,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: false
-      },
-      {
+    },
+    {
         title: 'Wooden Cube Shelf Unit with Drawers',
         price: '₪700',
         description: 'Three drawers, six open spaces\nPerfect for organizing books, décor, or random chaos\n30x120x87cm',
@@ -234,8 +235,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Mesh Back Office Chair',
         price: '₪200',
         description: 'Adjustable and comfy\nBreathable mesh back and a soft rust-orange seat',
@@ -243,8 +244,8 @@ const items = [
         sold: true,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Black Faux Leather Executive Chair',
         price: '₪400',
         description: 'Comfortable, classic, and perfect for a home office or studio setup.',
@@ -252,8 +253,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'IKEA MICKE Desk',
         price: '₪250',
         description: 'Two drawers\nCable organizing space and opening\nGood condition\n142x50x75cm',
@@ -261,8 +262,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Minimalist White Desk w/ Wooden Trestle Legs',
         price: '₪300',
         description: 'Spacious, sturdy, and stylish\nPerfect for work, study, or creative projects.',
@@ -270,8 +271,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Dell Screen P2719H',
         price: '₪500',
         description: '27" Full HD IPS Display\n1920 × 1080\nWide viewing angles (178°)\nExcellent condition',
@@ -279,8 +280,8 @@ const items = [
         sold: true,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Dell Screen P2422H',
         price: '₪350',
         description: '24" Full HD IPS Display\n1920 × 1080\nWide viewing angles (178°)\nExcellent condition',
@@ -288,8 +289,8 @@ const items = [
         sold: false,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'IKEA FRIHETEN Couch',
         price: '₪1000',
         description: 'Sofa-bed with easy pull-out mechanism\nBig storage compartment\n230x151x66cm',
@@ -297,8 +298,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'HISENSE TV 42 INCH',
         price: '₪400',
         description: 'Smart TV\nExcellent condition\n\n+ Apple TV - ₪500 ONLY!',
@@ -306,8 +307,8 @@ const items = [
         sold: false,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Apple TV 4K (1st Gen)',
         price: '₪200',
         description: '4K HDR.\nThe glass in the control is cracked, but its 100% functional.\n\n+ Hisense TV - ₪500 ONLY!',
@@ -315,8 +316,8 @@ const items = [
         sold: false,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'IKEA ÅRSTID Table Lamp (x2)',
         price: '₪100',
         description: 'Brass finish\n55cm tall',
@@ -324,8 +325,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: false
-      },
-      {
+    },
+    {
         title: 'IKEA ÅRSTID Standing Lamp',
         price: '₪200',
         description: 'Silver finish\n155cm tall',
@@ -333,8 +334,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: false
-      },
-      {
+    },
+    {
         title: 'IKEA Extendable Table and 4 Chairs',
         price: '₪1000',
         description: 'VIHALS Table: White, minimalist design – 140×70cm. Seats 6 (8 extended)\n4 LIDÅS Chairs: Grey seat with white legs',
@@ -342,8 +343,8 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Tami4 Family',
         price: '₪400',
         description: 'Cream color\nExcellent condition',
@@ -351,8 +352,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'BOSCH WAN2016TPL Washing Machine',
         price: '₪1000',
         description: '7kg, Front Load\nSUPER QUIET!\nLess than a year of use',
@@ -360,8 +361,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'Ninja BL682 Blender + Food Processor',
         price: '₪400',
         description: '1500W motor\nIncludes pitcher, 3 sizes of Ninja cups and a cap for smoothies',
@@ -369,8 +370,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'SodaStream Spirit + 3 bottles',
         price: '₪200',
         description: 'Excellent condition\n Includes 2 empty tubes and 3 bottles',
@@ -378,8 +379,8 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: true
-      },
-      {
+    },
+    {
         title: 'IKEA Kallax 2x4 White Shelves',
         price: '₪350',
         description: 'Clean, modern design.\n8 spacious cubes for storage or display.\nSturdy and in excellent condition.',
@@ -387,7 +388,7 @@ const items = [
         sold: false,
         category: 'Furniture',
         lastWeekOnly: true
-      },
+    },
 ];
 
 
@@ -471,15 +472,17 @@ export default function GarageSale() {
                                     {item.description}
                                 </p>
                                 <div className="mt-2 flex flex-col items-end space-y-1">
-    <div className="text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit rounded">
-        {item.price}
-    </div>
-    {item.lastWeekOnly && !item.sold && (
-        <div className="text-xs bg-yellow-200 text-yellow-900 rounded-full px-2 py-0.5 font-semibold">
-    ⏳ PICKUP LATE AUGUST
-</div>
-    )}
-</div>
+                                    <div
+                                        className="text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit rounded">
+                                        {item.price}
+                                    </div>
+                                    {item.lastWeekOnly && !item.sold && (
+                                        <div
+                                            className="text-xs bg-yellow-200 text-yellow-900 rounded-full px-2 py-0.5 font-semibold">
+                                            ⏳ PICKUP LATE AUGUST
+                                        </div>
+                                    )}
+                                </div>
 
                             </div>
                         </div>
