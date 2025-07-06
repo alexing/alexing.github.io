@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import {useState} from 'react';
 
+import Head from 'next/head';
+
+
 const items = [
     {
         title: 'Arizer ArGo – Compact Vaporizer',
@@ -401,115 +404,126 @@ export default function GarageSale() {
         : items.filter(item => item.category === selectedCategory);
 
     return (
-        <div className="min-h-screen bg-brand text-foreground px-4 py-12 w-full overflow-x-hidden">
-            <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold mb-2">WE'RE MOVING!</h1>
-                <h2 className="text-2xl mb-1">SELLING EVERYTHING :)</h2>
-                <p className="text-md text-subtle mb-4">Pick up from Yaffo – Yehuda Hayamit st.</p>
-                <a
-                    href="https://wa.me/972585396433"
-                    className="inline-block text-green-500 hover:underline"
-                >
-                    📞 Message me on WhatsApp
-                </a>
-                <p className="text-center text-subtle mt-4 max-w-md mx-auto">
-                    If you're looking for anything for your home and you don't see it here, reach out.<br/>
-                    We're probably selling it too. 😅 <br/><br/>
-                    <em>If it says “pickup late August,” you can reserve it with a Bit downpayment 💸.</em><br/>
-                </p>
-            </div>
+        <>
+            <Head>
+                <title>We're Leaving Israel - SALE</title>
+                <meta property="og:title" content="We're Leaving Israel - SALE"/>
+                <meta property="og:description"
+                      content="Selling everything! Pick up from Yaffo - Yehuda Hayamit st. 🧳"/>
+                <meta property="og:image" content="https://alexingberg.com/images/thumbnail.png"/>
+                <meta property="og:url" content="https://alexingberg.com/sale"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+            </Head>
+            <div className="min-h-screen bg-brand text-foreground px-4 py-12 w-full overflow-x-hidden">
+                <div className="text-center mb-10">
+                    <h1 className="text-4xl font-bold mb-2">WE'RE MOVING!</h1>
+                    <h2 className="text-2xl mb-1">SELLING EVERYTHING :)</h2>
+                    <p className="text-md text-subtle mb-4">Pick up from Yaffo – Yehuda Hayamit st.</p>
+                    <a
+                        href="https://wa.me/972585396433"
+                        className="inline-block text-green-500 hover:underline"
+                    >
+                        📞 Message me on WhatsApp
+                    </a>
+                    <p className="text-center text-subtle mt-4 max-w-md mx-auto">
+                        If you're looking for anything for your home and you don't see it here, reach out.<br/>
+                        We're probably selling it too. 😅 <br/><br/>
+                        <em>If it says “pickup late August,” you can reserve it with a Bit downpayment 💸.</em><br/>
+                    </p>
+                </div>
 
-            <div className="
+                <div className="
                 flex flex-nowrap space-x-4 mb-8 overflow-x-auto no-scrollbar -mx-4 px-4 w-full
                 md:justify-center md:flex-wrap md:overflow-x-visible md:no-scrollbar-none md:mx-0 md:px-0
             ">
-                {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants'].map(cat => (
-                    <button
-                        key={cat}
-                        onClick={() => setSelectedCategory(cat)}
-                        className={`px-4 py-2 rounded-full border min-w-max ${
-                            selectedCategory === cat
-                                ? 'bg-accent text-black font-semibold'
-                                : 'text-subtle border-subtle hover:bg-neutral-800'
-                        }`}
-                    >
-                        {cat}
-                    </button>
-                ))}
-            </div>
-
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                {[...filteredItems]
-                    .sort((a, b) => Number(a.sold) - Number(b.sold))
-                    .map((item, idx) => (
-                        <div
-                            key={item.title}
-                            className="relative group rounded-lg shadow-md overflow-hidden bg-[#1a1a1a] hover:shadow-lg transition-shadow duration-200"
-                        >
-                            <div className="aspect-square overflow-hidden relative">
-                                <div
-                                    className="aspect-square overflow-hidden relative cursor-pointer"
-                                    onClick={() => setSelectedItem(item)}
-                                >
-                                    <img
-                                        src={item.img}
-                                        alt={item.title}
-                                        className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-200"
-                                    />
-                                    {item.sold && (
-                                        <img
-                                            src="/images/sold.png"
-                                            alt="Sold"
-                                            className="absolute top-0 left-0 w-full h-full object-contain opacity-80 pointer-events-none"
-                                        />
-                                    )}
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <h2 className="text-xl font-semibold">{item.title}</h2>
-                                <p className="text-sm whitespace-pre-line text-gray-300 mt-1">
-                                    {item.description}
-                                </p>
-                                <div className="mt-2 flex flex-col items-end space-y-1">
-                                    <div
-                                        className="text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit rounded">
-                                        {item.price}
-                                    </div>
-                                    {item.lastWeekOnly && !item.sold && (
-                                        <div
-                                            className="text-xs bg-yellow-200 text-yellow-900 rounded-full px-2 py-0.5 font-semibold">
-                                            ⏳ PICKUP LATE AUGUST
-                                        </div>
-                                    )}
-                                </div>
-
-                            </div>
-                        </div>
-
-                    ))}
-            </div>
-
-            {selectedItem && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
-                    onClick={() => setSelectedItem(null)}
-                >
-                    <div className="max-w-3xl w-full p-4 bg-black rounded-lg relative">
-                        <img
-                            src={selectedItem.img}
-                            alt={selectedItem.title}
-                            className="w-full h-auto object-contain rounded"
-                        />
+                    {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants'].map(cat => (
                         <button
-                            className="absolute top-2 right-4 text-white text-2xl"
-                            onClick={() => setSelectedItem(null)}
+                            key={cat}
+                            onClick={() => setSelectedCategory(cat)}
+                            className={`px-4 py-2 rounded-full border min-w-max ${
+                                selectedCategory === cat
+                                    ? 'bg-accent text-black font-semibold'
+                                    : 'text-subtle border-subtle hover:bg-neutral-800'
+                            }`}
                         >
-                            ×
+                            {cat}
                         </button>
-                    </div>
+                    ))}
                 </div>
-            )}
-        </div>
+
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    {[...filteredItems]
+                        .sort((a, b) => Number(a.sold) - Number(b.sold))
+                        .map((item, idx) => (
+                            <div
+                                key={item.title}
+                                className="relative group rounded-lg shadow-md overflow-hidden bg-[#1a1a1a] hover:shadow-lg transition-shadow duration-200"
+                            >
+                                <div className="aspect-square overflow-hidden relative">
+                                    <div
+                                        className="aspect-square overflow-hidden relative cursor-pointer"
+                                        onClick={() => setSelectedItem(item)}
+                                    >
+                                        <img
+                                            src={item.img}
+                                            alt={item.title}
+                                            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-200"
+                                        />
+                                        {item.sold && (
+                                            <img
+                                                src="/images/sold.png"
+                                                alt="Sold"
+                                                className="absolute top-0 left-0 w-full h-full object-contain opacity-80 pointer-events-none"
+                                            />
+                                        )}
+                                    </div>
+                                </div>
+                                <div className="p-4">
+                                    <h2 className="text-xl font-semibold">{item.title}</h2>
+                                    <p className="text-sm whitespace-pre-line text-gray-300 mt-1">
+                                        {item.description}
+                                    </p>
+                                    <div className="mt-2 flex flex-col items-end space-y-1">
+                                        <div
+                                            className="text-lg font-medium bg-neutral-200 text-black px-2 py-1 w-fit rounded">
+                                            {item.price}
+                                        </div>
+                                        {item.lastWeekOnly && !item.sold && (
+                                            <div
+                                                className="text-xs bg-yellow-200 text-yellow-900 rounded-full px-2 py-0.5 font-semibold">
+                                                ⏳ PICKUP LATE AUGUST
+                                            </div>
+                                        )}
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        ))}
+                </div>
+
+                {selectedItem && (
+                    <div
+                        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+                        onClick={() => setSelectedItem(null)}
+                    >
+                        <div className="max-w-3xl w-full p-4 bg-black rounded-lg relative">
+                            <img
+                                src={selectedItem.img}
+                                alt={selectedItem.title}
+                                className="w-full h-auto object-contain rounded"
+                            />
+                            <button
+                                className="absolute top-2 right-4 text-white text-2xl"
+                                onClick={() => setSelectedItem(null)}
+                            >
+                                ×
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </>
     );
 }
