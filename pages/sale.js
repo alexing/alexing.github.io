@@ -12,7 +12,7 @@ const items = [
         img: '/images/vaporizer.jpeg',
         sold: false,
         category: 'Tech & Gadgets',
-        lastWeekOnly: true,
+        lastWeekOnly: false,
     },
     {
         title: 'Nintendo Switch',
