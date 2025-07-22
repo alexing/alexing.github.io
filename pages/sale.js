@@ -6,6 +6,15 @@ import Head from 'next/head';
 
 const items = [
     {
+        title: 'Vespa Sprint 125 (2018)',
+        price: '₪16,000',
+        description: 'Green, sleek, fast, and beautiful.\nLess than 19K km.\n Minor cosmetic details, excellent functional condition',
+        img: '/images/vespa.png',
+        sold: false,
+        category: 'Mobility',
+        lastWeekOnly: true,
+    },
+    {
         title: 'Arizer ArGo – Compact Vaporizer',
         price: '₪600',
         description: 'Clean, excellent condition.\nIncludes: hard case, accessories.\nDiscreet, high-quality vape.',
@@ -436,7 +445,7 @@ export default function GarageSale() {
                 flex flex-nowrap space-x-4 mb-8 overflow-x-auto no-scrollbar -mx-4 px-4 w-full
                 md:justify-center md:flex-wrap md:overflow-x-visible md:no-scrollbar-none md:mx-0 md:px-0
             ">
-                    {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants'].map(cat => (
+                    {['All', 'Tech & Gadgets', 'Appliances', 'Furniture', 'Plants', 'Mobility'].map(cat => (
                         <button
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
