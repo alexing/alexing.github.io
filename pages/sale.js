@@ -361,7 +361,7 @@ const items = [
         price: '₪400',
         description: 'Cream color\nExcellent condition',
         img: '/images/tami4.jpeg',
-        sold: false,
+        sold: true,
         category: 'Appliances',
         lastWeekOnly: true
     },
@@ -388,7 +388,7 @@ const items = [
         price: '₪200',
         description: 'Excellent condition\n Includes 2 empty tubes and 3 bottles',
         img: '/images/sodastream.png',
-        sold: false,
+        sold: true,
         category: 'Appliances',
         lastWeekOnly: true
     },
