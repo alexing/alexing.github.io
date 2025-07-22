@@ -226,7 +226,7 @@ const items = [
         price: '₪100',
         description: 'Two big drawers\nExcellent condition\n35x30x49cm',
         img: '/images/mesa_de_luz_ikea.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: true,
     },
@@ -235,7 +235,7 @@ const items = [
         price: '₪200',
         description: 'Mustard Gold\nExcellent condition, perfect as a footrest or accent seat.',
         img: '/images/banqueta_amarilla.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: false
     },
@@ -244,7 +244,7 @@ const items = [
         price: '₪700',
         description: 'Three drawers, six open spaces\nPerfect for organizing books, décor, or random chaos\n30x120x87cm',
         img: '/images/rack.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: true
     },
@@ -298,7 +298,7 @@ const items = [
         price: '₪350',
         description: '24" Full HD IPS Display\n1920 × 1080\nWide viewing angles (178°)\nExcellent condition',
         img: '/images/dell_p2422h.jpeg',
-        sold: false,
+        sold: true,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
     },
@@ -343,7 +343,7 @@ const items = [
         price: '₪200',
         description: 'Silver finish\n155cm tall',
         img: '/images/lampara.jpeg',
-        sold: false,
+        sold: true,
         category: 'Appliances',
         lastWeekOnly: false
     },
