@@ -15,15 +15,6 @@ const items = [
         lastWeekOnly: true,
     },
     {
-        title: 'Arizer ArGo – Compact Vaporizer',
-        price: '₪600',
-        description: 'Clean, excellent condition.\nIncludes: hard case, accessories.\nDiscreet, high-quality vape.',
-        img: '/images/vaporizer.jpeg',
-        sold: false,
-        category: 'Tech & Gadgets',
-        lastWeekOnly: false,
-    },
-    {
         title: 'Nintendo Switch',
         price: '₪700',
         description: 'Excellent condition.\nIncludes: extra joystick, accessories, soft cases, 3 physical games and several others in my Nintendo account.',
@@ -337,6 +328,15 @@ const items = [
         sold: false,
         category: 'Appliances',
         lastWeekOnly: false
+    },
+    {
+        title: 'Arizer ArGo – Compact Vaporizer',
+        price: '₪600',
+        description: 'Clean, excellent condition.\nIncludes: hard case, accessories.\nDiscreet, high-quality vape.',
+        img: '/images/vaporizer.jpeg',
+        sold: false,
+        category: 'Tech & Gadgets',
+        lastWeekOnly: false,
     },
     {
         title: 'IKEA ÅRSTID Standing Lamp',
