@@ -7,7 +7,7 @@ import Head from 'next/head';
 const items = [
     {
         title: 'Vespa Sprint 125 (2018)',
-        price: '₪16,000',
+        price: '₪12,000',
         description: 'Green, sleek, fast, and beautiful.\nLess than 19K km.\n Minor cosmetic details, excellent functional condition',
         img: '/images/vespa.png',
         sold: false,
