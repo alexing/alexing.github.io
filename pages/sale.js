@@ -24,6 +24,15 @@ const items = [
         lastWeekOnly: false,
     },
     {
+        title: 'Evoke City Bike',
+        price: '₪1,000',
+        description: 'Sturdy city bike with basket.\nSmooth ride, good condition.\nPerfect for daily errands.',
+        img: '/images/bike.jpeg',
+        sold: false,
+        category: 'Mobility',
+        lastWeekOnly: false,
+    },
+    {
         title: 'Nintendo Switch',
         price: '₪700',
         description: 'Excellent condition.\nIncludes: extra joystick, accessories, soft cases, 3 physical games and several others in my Nintendo account.',
