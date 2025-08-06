@@ -26,7 +26,7 @@ const items = [
     {
         title: 'Evoke City Bike',
         price: '₪1,000',
-        description: 'Sturdy city bike with basket.\nSmooth ride, good condition.\nPerfect for daily errands.',
+        description: 'Sturdy city bike with basket.\nSmooth ride, good condition, includes sturdy chain.\nPerfect for daily errands.',
         img: '/images/bike.jpeg',
         sold: false,
         category: 'Mobility',
