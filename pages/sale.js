@@ -15,6 +15,15 @@ const items = [
         lastWeekOnly: true,
     },
     {
+        title: 'WiFi Dud (Electrical Heater) - Switcher Touch',
+        price: '₪150',
+        description: 'Smart wall switch for your dud with app control.\nSchedule and control the heater remotely.\niOS and Android.',
+        img: '/images/dud.png',
+        sold: false,
+        category: 'Tech & Gadgets',
+        lastWeekOnly: false,
+    },
+    {
         title: 'Nintendo Switch',
         price: '₪700',
         description: 'Excellent condition.\nIncludes: extra joystick, accessories, soft cases, 3 physical games and several others in my Nintendo account.',
@@ -93,15 +102,6 @@ const items = [
         img: '/images/caloventor.jpeg',
         sold: false,
         category: 'Appliances',
-        lastWeekOnly: false,
-    },
-    {
-        title: 'Large Wall Mirror with Wooden Frame',
-        price: '₪250',
-        description: '60x80cm.',
-        img: '/images/mirror.jpeg',
-        sold: false,
-        category: 'Furniture',
         lastWeekOnly: false,
     },
     {
