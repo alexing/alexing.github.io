@@ -91,7 +91,7 @@ const items = [
         price: '₪200',
         description: 'Excellent condition.\n20x17x201cm.',
         img: '/images/red_shelves.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: false,
     },
