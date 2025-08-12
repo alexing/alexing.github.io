@@ -340,7 +340,7 @@ const items = [
     },
     {
         title: 'Arizer ArGo – Compact Vaporizer',
-        price: '₪600',
+        price: '₪500',
         description: 'Clean, excellent condition.\nIncludes: hard case, accessories.\nDiscreet, high-quality vape.',
         img: '/images/vaporizer.jpeg',
         sold: false,
