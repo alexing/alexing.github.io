@@ -28,7 +28,7 @@ const items = [
         price: '₪900',
         description: 'Sturdy city bike with basket.\nSmooth ride, good condition, includes sturdy chain.\nPerfect for daily errands.',
         img: '/images/bike.jpeg',
-        sold: false,
+        sold: true,
         category: 'Mobility',
         lastWeekOnly: true,
     },
