@@ -136,7 +136,7 @@ const items = [
         price: '₪250',
         description: 'Tropical look with pink-red leaves.\nLow maintenance and bold.\nGreat for bright indoor spots.',
         img: '/images/ti_plant.jpeg',
-        sold: false,
+        sold: true,
         category: 'Plants',
         lastWeekOnly: false,
     },
