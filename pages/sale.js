@@ -334,7 +334,7 @@ const items = [
         price: '₪100',
         description: 'Brass finish\n55cm tall',
         img: '/images/velador.jpeg',
-        sold: false,
+        sold: true,
         category: 'Appliances',
         lastWeekOnly: false
     },
