@@ -82,7 +82,7 @@ const items = [
         price: '₪200',
         description: 'Excellent condition.\n28x30x190cm.',
         img: '/images/shelves.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: false,
     },
