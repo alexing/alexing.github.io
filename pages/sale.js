@@ -280,7 +280,7 @@ const items = [
         price: '₪300',
         description: 'Spacious, sturdy, and stylish\nPerfect for work, study, or creative projects.',
         img: '/images/escritorio_mica.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: true
     },
