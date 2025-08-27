@@ -19,7 +19,7 @@ const items = [
         price: '₪150',
         description: 'Smart wall switch for your dud with app control.\nSchedule and control the heater remotely.\niOS and Android.',
         img: '/images/dud.png',
-        sold: false,
+        sold: true,
         category: 'Tech & Gadgets',
         lastWeekOnly: false,
     },
