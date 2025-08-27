@@ -271,7 +271,7 @@ const items = [
         price: '₪250',
         description: 'Two drawers\nCable organizing space and opening\nGood condition\n142x50x75cm',
         img: '/images/escritorio_cajones.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: true
     },
@@ -316,7 +316,7 @@ const items = [
         price: '₪400',
         description: 'Smart TV\nExcellent condition\n\n',
         img: '/images/tele.jpeg',
-        sold: false,
+        sold: true,
         category: 'Tech & Gadgets',
         lastWeekOnly: true
     },
@@ -361,7 +361,7 @@ const items = [
         price: '₪1000',
         description: 'VIHALS Table: White, minimalist design – 140×70cm. Seats 6 (8 extended)\n4 LIDÅS Chairs: Grey seat with white legs',
         img: '/images/mesa_sillas1.jpeg',
-        sold: false,
+        sold: true,
         category: 'Furniture',
         lastWeekOnly: true
     },
