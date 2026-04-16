@@ -51,9 +51,9 @@ export default function Home() {
           </motion.h2>
           <ul className="space-y-2">
             <li>📍 <strong>CTO & Co-Founder @ nivii.ai</strong> (2025–present) – leading technical vision</li>
-            <li>📍 <strong>Senior ML Engineer @ Mastercard (Dynamic Yield)</strong> (2023–2025) – scaled visual recommendations, LLMs, infra, and CV-powered shopping assistants</li>
+            <li>📍 <strong>Lead ML Engineer @ Mastercard (Dynamic Yield)</strong> (2023–2025) – scaled visual recommendations, LLMs, infra, and CV-powered shopping assistants</li>
             <li>📍 <strong>Senior ML/MLOps Engineer @ Outbrain</strong> (2019–2023) – built internal tooling that 10x’d data science velocity, from POC to production</li>
-            <li>📍 <strong>Data Engineer @ Namogoo</strong> (2018–2019) – full-stack data work on cloud pipelines, ML models, and real-time infrastructure</li>
+            <li>📍 <strong>Senior Data Engineer @ Namogoo</strong> (2018–2019) – full-stack data work on cloud pipelines, ML models, and real-time infrastructure</li>
             <li>
               <a href="https://www.linkedin.com/in/alexingberg/details/experience/"
                  className="text-accent hover:underline"
