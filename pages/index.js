@@ -47,7 +47,7 @@ export default function Home() {
                      whileInView={{ opacity: 1, y: 0 }}
                      initial={{ opacity: 0, y: 20 }}
                      transition={{ duration: 0.4 }}>
-            work experience
+            recent work experience
           </motion.h2>
           <ul className="space-y-2">
             <li>📍 <strong>CTO & Co-Founder @ nivii.ai</strong> (2025–present) – leading technical vision</li>
