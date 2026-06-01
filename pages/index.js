@@ -98,7 +98,7 @@ export default function Home() {
             <a href="https://github.com/alexing" target="_blank" rel="noopener">github</a>
             <a href="https://www.linkedin.com/in/alexingberg/" target="_blank" rel="noopener">linkedin</a>
             <a href="mailto:hi@alexingberg.com">email</a>
-            <a href="/cv.pdf" download className="text-accentSoft font-medium hover:underline">my cv</a>
+            {/* <a href="/cv.pdf" download className="text-accentSoft font-medium hover:underline">my cv</a> */}
           </div>
           <p>© {new Date().getFullYear()} Alex Ingberg</p>
         </footer>
